@@ -1,0 +1,6 @@
+:root {
+    --bg-color-text: rgba(255, 255, 255, 1);
+    --bg-color-background: rgba(6, 23, 30, 1);
+    --bg-color-backgroundheadfeed: rgba(9, 33, 42, 1);
+    --bg-color-footertext: rgba(153, 172, 179, 1);
+}
