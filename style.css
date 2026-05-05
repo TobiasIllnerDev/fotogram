@@ -3,3 +3,23 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+.header_section {
+    background-color: var(--bg-color-backgroundheadfeed);
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 140px;
+}
+
+.header_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_img > img {
+    width: 215px;
+    height: 41px;
+}
