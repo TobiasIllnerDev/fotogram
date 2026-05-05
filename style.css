@@ -31,21 +31,22 @@ body {
 
 
 /* Main Section */
-.main_section {
-    height: 100vh;
-}
+
 
 .main_section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 120px;
+    height: 100vh;
 }
 
 .main_headline > h1 {
     font-family: 'Figtree';
     font-size: 56px;
     color: var(--bg-color-text);
+    line-height: 100%;
+    letter-spacing: 0%;
 }
 
 /* Footer Section */
