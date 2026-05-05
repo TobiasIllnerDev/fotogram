@@ -38,7 +38,7 @@ function render() {
 function getNotesHTML(index) {
     return `
         <div class="img_for_main">
-            <img src="${myImgs[index]}" alt="${myImgsDescription[index]}"/>
+            <img src="${myImgs[index]}" alt="${myImgsDescription[index]}" onclick=""/>
         </div>
     `;
 }
