@@ -1,16 +1,16 @@
 let myImgs = [
-    "bird.png",
-    "bird_on_stone.png",
-    "cat.png",
-    "city_night.png",
-    "clouds_from_top.png",
-    "duck.png",
-    "lake_with_mountain.png",
-    "men_in_night.png",
-    "mountain_with_snow.png",
-    "rainy_clouds.png",
-    "sky_with_mountain.png",
-    "tree_with_snow.png"
+    "./assets/img/bird.png",
+    "./assets/img/bird_on_stone.png",
+    "./assets/img/cat.png",
+    "./assets/img/city_night.png",
+    "./assets/img/clouds_from_top.png",
+    "./assets/img/duck.png",
+    "./assets/img/lake_with_mountain.png",
+    "./assets/img/men_in_night.png",
+    "./assets/img/mountain_with_snow.png",
+    "./assets/img/rainy_clouds.png",
+    "./assets/img/sky_with_mountain.png",
+    "./assets/img/tree_with_snow.png"
 ];
 
 let myImgsDescription = [
@@ -27,3 +27,21 @@ let myImgsDescription = [
     "Sky with Mountains",
     "Tree with snow"
 ];
+
+function render() {
+    let contentRef = document.getElementById('main_img_section');
+    let html = "";
+    for (let i = 0; i < myImgs.length; i++){
+        html += getNotesHTML(i);
+    }
+
+    contentRef.innerHTML = html;
+}
+
+function getNotesHTML(index) {
+    return `
+        <div class="img_for_main">
+            <img src="${myImgs[index]}" alt="${myImgsDescription[index]}"/>
+        </div>
+    `;
+}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/styles/fonts.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body onload="render()">
     <header class="header_section">
       <section class="header_img">
         <img src="./assets/icons/logo_with_text.svg" alt="logo_with_text" />
@@ -21,7 +21,7 @@
       <section class="main_headline">
         <h1>Your personal photo album</h1>
       </section>
-      <section class="main_img_section"></section>
+      <section id="main_img_section"></section>
     </main>
 
     <footer class="footer">
@@ -32,5 +32,7 @@
         </section>
       </section>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
