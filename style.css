@@ -35,6 +35,19 @@ body {
     height: 100vh;
 }
 
+.main_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.main_headline > h1 {
+    font-family: 'Figtree';
+    font-size: 56px;
+    color: var(--bg-color-text);
+}
+
 /* Footer Section */
 
 .footer {
