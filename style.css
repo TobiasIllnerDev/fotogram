@@ -6,8 +6,9 @@
 
 body {
     background-color: var(--bg-color-background);
+    height: 100%;
 }
-
+/* Header Section */
 .header_section {
     background-color: var(--bg-color-backgroundheadfeed);
     height: 80px;
@@ -27,3 +28,37 @@ body {
     width: 215px;
     height: 41px;
 }
+
+
+/* Main Section */
+.main_section {
+    height: 100vh;
+}
+
+/* Footer Section */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-backgroundheadfeed);
+    height: 128px;
+    width: 100%;
+    border-radius: 40% 40% 0% 0%;
+}
+
+.footer_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 225px;
+}
+
+.img_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
