@@ -37,6 +37,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 120px;
     height: 100vh;
 }
@@ -47,6 +48,23 @@ body {
     color: var(--bg-color-text);
     line-height: 100%;
     letter-spacing: 0%;
+}
+
+
+#main_img_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.img_for_main > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 /* Footer Section */

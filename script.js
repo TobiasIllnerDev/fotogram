@@ -30,12 +30,9 @@ let myImgsDescription = [
 
 function render() {
     let contentRef = document.getElementById('main_img_section');
-    let html = "";
     for (let i = 0; i < myImgs.length; i++){
-        html += getNotesHTML(i);
-    }
-
-    contentRef.innerHTML = html;
+        contentRef.innerHTML  += getNotesHTML(i);
+    }  
 }
 
 function getNotesHTML(index) {
