@@ -38,7 +38,27 @@ function render() {
 function getNotesHTML(index) {
     return `
         <div class="img_for_main">
-            <img src="${myImgs[index]}" alt="${myImgsDescription[index]}" onclick=""/>
+            <img src="${myImgs[index]}" 
+                alt="${myImgsDescription[index]}" 
+                onclick="openDialog(${index})"/>
         </div>
     `;
+}
+
+function openDialog(index) {
+    let dialog = document.getElementById("myDialog");
+    let img = document.getElementById("dialogImg");
+    let text = document.getElementById("dialogText");
+
+    img.src = myImgs[index];
+    text.innerText = myImgsDescription[index];
+
+    dialog.classList.add("opened"); 
+    dialog.showModal();
+}
+
+function closeDialog() {
+    let dialog = document.getElementById("myDialog");
+    dialog.classList.remove("opened"); 
+    dialog.close();
 }

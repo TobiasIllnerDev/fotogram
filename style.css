@@ -74,6 +74,38 @@ body {
     border: 1px solid var(--bg-color-border);
 }
 
+dialog {
+    background-color: var(--bg-color-background);
+    width: 650px;
+    height: 650px;
+    padding: 56px 64px;
+    gap: 48px;
+    border-radius: 40px;
+}
+
+dialog.opened {
+    border: 5px solid var(--bg-color-backgroundheadfeed);
+    transform: translateX(0px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: fixed;       
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+    background-color: var(--bg-color-backgroundheadfeed);
+    opacity: 0.5;
+}
+
+dialog.opened::backdrop {
+    background-color: var(--bg-color-backgroundheadfeed);
+    
+}
+
 /* Footer Section */
 
 .footer {
