@@ -23,9 +23,19 @@
       </section>
       <section id="main_img_section">
         <dialog id="myDialog">
+          <div class="dialogTop">
+            <p id="dialogText"></p>
+            <button onclick="closeDialog()">X</button>
+          </div>
           <img id="dialogImg" src="" alt="" />
-          <p id="dialogText"></p>
-          <button onclick="closeDialog()">Close</button>
+          <div>
+            <button onclick="nextPicture()">
+              <img src="./assets/icons/Arrow-left.svg" alt="Arrow Left" />
+            </button>
+            <button onclick="backPicture()">
+              <img src="./assets/icons/Arrow-Right.svg" alt="Arrow Right" />
+            </button>
+          </div>
         </dialog>
       </section>
     </main>

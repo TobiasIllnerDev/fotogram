@@ -106,6 +106,22 @@ dialog.opened::backdrop {
     
 }
 
+.dialogTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+}
+
+.dialogTop > p {
+    color: var(--bg-color-text);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Figtree';
+    letter-spacing: 0%;
+    line-height: 100%;
+}
 /* Footer Section */
 
 .footer {
