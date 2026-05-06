@@ -22,7 +22,11 @@
         <h1>Your personal photo album</h1>
       </section>
       <section id="main_img_section">
-        <dialog id="myDialog">
+        <dialog
+          id="myDialog"
+          closedby="any"
+          onclose="this.classList.remove('opened')"
+        >
           <div class="dialogTop">
             <p id="dialogText"></p>
             <button onclick="closeDialog()">

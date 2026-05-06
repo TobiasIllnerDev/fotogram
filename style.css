@@ -66,12 +66,17 @@ body {
     gap: 16px;
 }
 
-.img_for_main > img {
+.img_for_main > button > img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 16px;
     border: 1px solid var(--bg-color-border);
+}
+
+.img_for_main > button {
+background-color: var(--bg-color-background);
+border: none;
 }
 
 dialog {
