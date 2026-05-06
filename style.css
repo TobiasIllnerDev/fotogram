@@ -85,7 +85,6 @@ dialog {
 
 dialog.opened {
     border: 5px solid var(--bg-color-backgroundheadfeed);
-    transform: translateX(0px);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -112,6 +111,18 @@ dialog.opened::backdrop {
     justify-content: space-between;
     align-items: center;
     height: 32px;
+    width: 100%;
+}
+
+.dialogTop > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--bg-color-text);
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    font-family: 'Figtree';
 }
 
 .dialogTop > p {
