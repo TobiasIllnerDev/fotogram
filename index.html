@@ -25,15 +25,17 @@
         <dialog id="myDialog">
           <div class="dialogTop">
             <p id="dialogText"></p>
-            <button onclick="closeDialog()">X</button>
+            <button onclick="closeDialog()">
+              <img src="./assets/icons/close.svg" alt="Close Dialog" />
+            </button>
           </div>
           <img id="dialogImg" src="" alt="" />
-          <div>
-            <button onclick="nextPicture()">
+          <div class="dialogBottom">
+            <button onclick="backPicture()">
               <img src="./assets/icons/Arrow-left.svg" alt="Arrow Left" />
             </button>
-            <p></p>
-            <button onclick="backPicture()">
+            <p id="dialogCounter">1/12</p>
+            <button onclick="nextPicture()" class="buttonNextPicture">
               <img src="./assets/icons/Arrow-Right.svg" alt="Arrow Right" />
             </button>
           </div>

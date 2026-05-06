@@ -45,16 +45,37 @@ function getNotesHTML(index) {
     `;
 }
 
+let currentIndex = 0;
+
 function openDialog(index) {
+    currentIndex = index;
     let dialog = document.getElementById("myDialog");
     let img = document.getElementById("dialogImg");
     let text = document.getElementById("dialogText");
+    let counter = document.getElementById("dialogCounter");
 
-    img.src = myImgs[index];
-    text.innerText = myImgsDescription[index];
+    img.src = myImgs[currentIndex];
+    text.innerText = myImgsDescription[currentIndex];
+    counter.innerText = `${currentIndex + 1}/${myImgs.length}`;
 
-    dialog.classList.add("opened"); 
+    dialog.classList.add("opened");
     dialog.showModal();
+}
+
+function nextPicture() {
+    currentIndex = (currentIndex + 1) % myImgs.length;
+    updateDialog();
+}
+
+function backPicture() {
+    currentIndex = (currentIndex - 1 + myImgs.length) % myImgs.length;
+    updateDialog();
+}
+
+function updateDialog() {
+    document.getElementById("dialogImg").src = myImgs[currentIndex];
+    document.getElementById("dialogText").innerText = myImgsDescription[currentIndex];
+    document.getElementById("dialogCounter").innerText = `${currentIndex + 1}/${myImgs.length}`;
 }
 
 function closeDialog() {
