@@ -100,8 +100,8 @@ body {
 
 dialog {
     background-color: var(--bg-color-background);
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
     padding: 36px 64px 56px 64px;
     gap: 48px;
     border-radius: 40px;
@@ -147,9 +147,9 @@ dialog.opened::backdrop {
     border: none;
     cursor: pointer;
     color: var(--bg-color-text);
-    width: 24px;
-    height: 24px;
-    font-size: 16px;
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
     font-family: 'Figtree';
 }
 
@@ -160,7 +160,7 @@ dialog.opened::backdrop {
 
 .dialogTop > p {
     color: var(--bg-color-text);
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
     font-family: 'Figtree';
     letter-spacing: 0%;
@@ -169,8 +169,8 @@ dialog.opened::backdrop {
 }
 
 dialog > img {
-    width: 387px;
-    height: 250px;
+    width: 550px;
+    height: 450px;
     object-fit: cover;
     border-radius: 0px;
     display: block;
@@ -184,8 +184,8 @@ dialog > img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 220px;                        
-    
+    width: 320px;                        
+    gap: 20px;
     border-radius: 40px;
     padding: 16px 20px;
     
@@ -194,7 +194,7 @@ dialog > img {
 .dialogBottom > p {
     color: var(--bg-color-text);
     font-family: 'Figtree';
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     min-width: 40px;
     text-align: center;
@@ -209,8 +209,8 @@ dialog > img {
     justify-content: center;
     padding: 4px;
     background-color: var(--bg-color-bgbutton);
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
