@@ -1,35 +1,35 @@
-let myImgs = [
-    "./assets/img/bird.png",
-    "./assets/img/bird_on_stone.png",
-    "./assets/img/cat.png",
-    "./assets/img/city_night.png",
-    "./assets/img/clouds_from_top.png",
-    "./assets/img/duck.png",
-    "./assets/img/lake_with_mountain.png",
-    "./assets/img/men_in_night.png",
-    "./assets/img/mountain_with_snow.png",
-    "./assets/img/rainy_clouds.png",
-    "./assets/img/sky_with_mountain.png",
-    "./assets/img/tree_with_snow.png"
+const myImgs = [
+    "./assets/img/cherry_blossem.png",
+    "./assets/img/City.png",
+    "./assets/img/Dog.png",
+    "./assets/img/flower.png",
+    "./assets/img/Fox.png",
+    "./assets/img/jellyfish.png",
+    "./assets/img/Mountain.png",
+    "./assets/img/owl.png",
+    "./assets/img/Ozean.png",
+    "./assets/img/snow_mountain.png",
+    "./assets/img/Swan.png",
+    "./assets/img/Highland_cow.png"
 ];
-
-let myImgsDescription = [
-    "Bird",
-    "Bird on stone",
-    "Cat",
-    "City at Night",
-    "Clouds from Space",
-    "duck",
-    "lake with Mountains",
-    "Men at Night",
-    "Mountain with snow",
-    "Rainy clouds",
-    "Sky with Mountains",
-    "Tree with snow"
+const myImgsDescription = [
+    "Cherry Blossem",
+    "City",
+    "Dog",
+    "Flowers",
+    "Fox",
+    "Jellyfish",
+    "Mountains",
+    "Owl",
+    "Ozean",
+    "Snow Mountains",
+    "Swan",
+    "Highland Cow"
 ];
+let currentIndex = 0;
 
 function render() {
-    let contentRef = document.getElementById('main_img_section');
+    const contentRef = document.getElementById('main_img_section');
     for (let i = 0; i < myImgs.length; i++){
         contentRef.innerHTML  += getNotesHTML(i);
     }  
@@ -45,7 +45,7 @@ function getNotesHTML(index) {
     `;
 }
 
-let currentIndex = 0;
+
 
 function openDialog(index) {
     currentIndex = index;
