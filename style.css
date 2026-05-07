@@ -323,11 +323,17 @@ dialog > img {
         align-items: center;
         text-align: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     .main_headline > h1 {
         font-size: 48px;
         text-align: center;
+    }
+
+    .main_headline > h2 {
+        text-align: center;
+        font-size: 42px;
     }
 
     #main_img_section {
@@ -350,6 +356,32 @@ dialog > img {
     }
 
     .img_for_main > button > img {
+        width: 400px;        
+        height: 350px;
+        border-radius: 16px;
+        gap: 10px;
+    }
+
+     #main_img_section_secound {
+        gap: 12px;
+        padding: 0 16px;
+        width: 100%;
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    .img_for_main_secound {
+        width: 400px;
+    }
+
+    .img_for_main_secound > button {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img_for_main_secound > button > img {
         width: 400px;        
         height: 350px;
         border-radius: 16px;
@@ -402,11 +434,17 @@ dialog > img {
         align-items: center;
         text-align: center;
         justify-content: center;
+        flex-direction: column;
     }
 
     .main_headline > h1 {
         font-size: 40px;
         text-align: center;
+    }
+
+    .main_headline > h2 {
+        text-align: center;
+        font-size: 32px;
     }
 
     #main_img_section {
@@ -435,6 +473,32 @@ dialog > img {
         gap: 10px;
     }
 
+    #main_img_section_secound {
+        gap: 24px;
+        padding: 0 16px;
+        width: 100%;
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    .img_for_main_secound {
+        width: 250px;
+    }
+
+    .img_for_main_secound > button {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img_for_main_secound > button > img {
+        width: 250px;        
+        height: 200px;
+        border-radius: 16px;
+        gap: 10px;
+    }
+
     dialog {
         width: 90vw;
         height: 500px;
@@ -445,6 +509,11 @@ dialog > img {
     dialog > img {
         width: 300px;
         height: 200px;
+    }
+
+    .img_section > img {
+        height: 32px;
+        padding-top: 10px;
     }
 
     .img_section > img {
