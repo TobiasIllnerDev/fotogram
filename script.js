@@ -81,3 +81,4 @@ function closeDialog() {
     dialog.classList.remove("opened"); 
     dialog.close();
 }
+
