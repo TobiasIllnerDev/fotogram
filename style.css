@@ -300,7 +300,8 @@ dialog > img {
 
 @media screen and (min-width: 1440px){
     .header_section {
-        padding: 0px max(120px, calc(50% - 720px));
+        padding-left: max(calc(50% - 720px), 160px);
+        padding-right: max(calc(50% - 720px), 160px);
     }
 }
 
